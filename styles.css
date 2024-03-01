@@ -1,0 +1,464 @@
+/* Estilo geral*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: #ba0000;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.contatocompra button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: #ba0000;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover, form .btn_enviar input:hover{
+  box-shadow: 0px 0px 12px ba0000;
+  transform: scale(1.05);
+}
+
+h2.titulo{
+  color: #e4e4e4;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h2.titulo span{
+  color: #ba0000;
+}
+
+video:hover{
+  transform: scale(1.05);
+}
+
+.btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ba0000;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: .2s;
+}
+
+/* Estilo header*/
+header{
+  padding: 40px 4%;
+  background-color: white;
+}
+
+header .logo img {
+  width: 75px;  
+  height: auto;
+}
+
+header .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: #e4e4e4;
+  transform: scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* Estilo do topo do site */
+
+section.topo-do-site{
+  padding: 30px 4%;
+}
+
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1{
+  color: #e4e4e4;
+  font-size: 39px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+  color: #ba0000;
+  font-size: 80px;
+}
+
+.topo-do-site .txt-topo-site p{
+  color: #e4e4e4;
+  font-size: 15px;
+  margin: 40px 0;
+}
+
+section .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  width: 570px;  
+  height: auto;
+}
+
+@keyframes flutuar {
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+/* Estilo especialidades */
+
+section.especialidades{
+  padding: 30px 4%;
+}
+
+section.especialidades .flex{
+  gap: 40px;
+}
+
+.especialidades .especialidades-box{
+  color: #e4e4e4;
+  padding: 40px;
+  border-radius: 20px;
+  transition: .2s;
+  width: 100%; 
+}
+
+.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #e4e4e4c3;
+  cursor: pointer;
+}
+
+.especialidades .especialidades-box i{
+  font-size: 70px;
+  color: #ba0000;
+}
+
+.especialidades .especialidades-box h3{
+  font-size: 23px;
+  margin: 15px 0;
+}
+
+/* Estilo cores */
+
+section.cores{
+  padding: 30px 4%;
+}
+
+section.cores .flex{
+  align-items: center;
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap; /* Adiciona a capacidade dos itens de "quebrarem" para a próxima linha */
+  justify-content: center; /* Centraliza os itens no contêiner */
+}
+
+.cores .txt-cores h2{
+  font-size: 40px;
+  line-height: 40px;
+  margin: 15px 0;
+}
+
+.cores .txt-cores h2 span{
+  color: #ba0000;
+  display: block;
+}
+
+.img-cor img {
+  width: 490px;
+  border-radius: 30px;  
+  height: auto;
+}
+
+/* Estilo blog */
+section.blog {
+  padding: 30px 4%;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section.blog .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.blog h2 {
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.blog p{
+  color: #e4e4e4;
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.img-port video {
+  width: 420px;
+  height: 720px;
+  border-radius: 100px;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-port {
+  transition: transform 0.5s ease-in-out;
+  flex: 0 0 auto; /* Não permite que os filhos do flex cresçam ou encolham */
+}
+
+/* Estilo sobre*/
+
+section.sobre{
+  padding: 30px 4%;
+}
+
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+.img-sobre img {
+  width: 560px;
+  border-radius: 30px;  
+  height: auto;
+}
+
+.sobre .txt-sobre{
+  color: #e4e4e4;
+}
+
+.sobre .txt-sobre p,li{
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .txt-sobre h2{
+  text-align: left;
+}
+
+/* Estilo forms */
+
+section.formulario{
+  padding: 30px 4%;
+}
+
+.formulario h2 {
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+form{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea{
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+form textarea{
+  resize: none;
+  height: 200px;}
+
+form .btn_enviar{
+  margin-top: 30px;
+  text-align: center;
+}
+
+form .btn_enviar input{
+  width: 120px;
+  background-color: #ba0000;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* botao de comprar */
+
+section.comprar{
+  padding: 30px 4%;
+}
+
+.comprar .flex{
+  gap: 60px;
+  text-align: center;
+}
+
+.comprar{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo Footer */
+
+footer{
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #444444c3;
+  background-color: white;
+}
+
+footer .logo-footer img {
+  width: 75px;  
+  height: auto;
+}
+
+footer .flex{
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.border{
+  border-top: 2px solid #ba0000;
+}
+
+footer .line-footer p i{
+  color: #ba0000;
+  font-size: 22px;
+}
+
+footer .line-footer p a{
+  color: white;
+}
+
+@media  screen and (max-width:1020px){
+  /* Cabecalho */
+  .menu-desktop, .contato{
+    display: none;
+  }
+
+  /* Classes gerais */
+  .flex{
+    flex-direction: column;
+    margin: 10px 4%;
+  }
+
+  .txt-topo-site h1{
+    margin-top: 50px;
+    font-size: 25px;
+  }
+
+  h2.titulo{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .sobre .flex{
+    flex-direction: column-reverse;
+    padding: -25px 4%;
+  }
+
+  .sobre h2.titulo{
+    text-align: center;
+  }
+
+  .sobre .txt-sobre p,li{
+    margin: 20px 0;
+    font-size: 10px;
+  }
+
+  .btn-social{
+    text-align: center;
+  }
+
+  .btn-social i{
+    font-size: 20px;
+  }
+
+  .btn-social button{
+    width: 45px;
+    height: 45px;
+    font-size: 10px;
+  }
+
+  .img-cor img {
+    width: 100%;
+  }
+
+  .especialidades .especialidades-box i{
+    font-size: 40px;
+  }
+  
+  .especialidades .especialidades-box h3{
+    font-size: 25px;
+  }
+
+  .contatocompra button{
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: -200px;
+  }
+
+}
